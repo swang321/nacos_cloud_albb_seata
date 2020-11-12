@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: nacos-config
+
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        # test
+#        namespace: 490e8f07-93e5-4f2b-9f10-992af08b0f8e
+        #dev
+        namespace: bd9edb32-393e-4d13-9cb0-0408f5b113d9
+server:
+  port: 8083
+
