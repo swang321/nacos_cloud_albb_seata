@@ -72,7 +72,28 @@
 
 * 通过Namespace实现  （官方建议的方式）
 
+##### 9 下载 sentinel jar包 启动  访问主页 http://localhost:8080/
 
+##### 添加 maven 依赖
+
+      <!-- SpringCloud ailibaba sentinel-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+
+##### 添加配置
+  
+  
+    spring:
+      application:
+        name: albb-sentinel
+        sentinel:
+          transport:
+            #配置Sentin dashboard地址
+            dashboard: localhost:8080
+            # 默认8719端口，假如被占用了会自动从8719端口+1进行扫描，直到找到未被占用的 端口
+            port: 8719
 
 
 

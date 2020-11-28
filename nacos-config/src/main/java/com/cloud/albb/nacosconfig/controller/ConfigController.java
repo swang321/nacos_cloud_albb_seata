@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ConfigController {
 
-
-    @Value("${title}")
-    public String title;
-
-    @RequestMapping("test")
-    public String test() {
-        return title;
-    }
+//
+//    @Value("${title}")
+//    public String title;
+//
+//    @RequestMapping("test")
+//    public String test() {
+//        return title;
+//    }
 }
